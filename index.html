@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charsheet="utf-8">
-	<title>HTML5 PANNEL SCROLL GSAP</title>
+	<title>HTML5 PANEL SCROLL GSAP</title>
 
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 
@@ -31,24 +31,24 @@
 
 	<script type="text/javascript">
 
-		var pannelsArray = new Array();
+		var panelsArray = new Array();
 
 		function initialize(){
 			
-			pannelsArray[0] = document.getElementById("01");
-			pannelsArray[1] = document.getElementById("02");
-			pannelsArray[2] = document.getElementById("03");
-			pannelsArray[3] = document.getElementById("04");
-			pannelsArray[4] = document.getElementById("05");
-			pannelsArray[5] = document.getElementById("06");
+			panelsArray[0] = document.getElementById("01");
+			panelsArray[1] = document.getElementById("02");
+			panelsArray[2] = document.getElementById("03");
+			panelsArray[3] = document.getElementById("04");
+			panelsArray[4] = document.getElementById("05");
+			panelsArray[5] = document.getElementById("06");
 
 			for (var i = 0; i < pannelsArray.length; i++) 
 			{
-				var img = pannelsArray[i];
+				var img = panelsArray[i];
 				img.style.left = i * 600 + "px";
 			}
 
-			setPannels(pannelsArray);
+			setPannels(panelsArray);
 		}
 
 	</script>
