@@ -4,7 +4,7 @@
  *
  *	@BuiltByEdgar
  * 
- * HTML5 PANNEL SCROLL GSAP
+ * HTML5 PANEL SCROLL GSAP
  *
  */
 	
