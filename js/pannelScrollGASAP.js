@@ -22,9 +22,9 @@
 
 	// INIT
 
-	function setPannels(pannelsArray)
+	function setPannels(panelsArray)
 	{
-		panelCount = pannelsArray.length;
+		panelCount = panelsArray.length;
 
 		window.onmousedown = startDrag;
 	}
