@@ -23,7 +23,7 @@ body{
 }
 
 .container{
-	position: relative;
+	position: absolute;
 	width: 600px;
 	height: 400px;
 }
