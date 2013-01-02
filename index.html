@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charsheet="utf-8">
+	<title>HTML5 PANNEL SCROLL GSAP</title>
+
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<!--	BODY 	-->
+
+<body onload="initialize()">
+
+	<div class="wrapper" id="wrapper">
+		<div class="container" id="container">
+			<img src="images/01.png" class="pannelImage" id="01">
+			<img src="images/02.png" class="pannelImage" id="02">
+			<img src="images/03.png" class="pannelImage" id="03">
+			<img src="images/04.png" class="pannelImage" id="04">
+			<img src="images/05.png" class="pannelImage" id="05">
+			<img src="images/06.png" class="pannelImage" id="06">
+		</div>
+	</div>
+
+	<script src="js/pannelScrollGASAP.js" ></script>
+	<script src="js/uncompressed/TweenLite.js" ></script>
+	<script src="js/uncompressed/easing/EasePack.js"></script>
+	<script src="js/uncompressed/plugins/CSSPlugin.js"></script>
+
+
+	<script type="text/javascript">
+
+		var pannelsArray = new Array();
+
+		function initialize(){
+			
+			pannelsArray[0] = document.getElementById("01");
+			pannelsArray[1] = document.getElementById("02");
+			pannelsArray[2] = document.getElementById("03");
+			pannelsArray[3] = document.getElementById("04");
+			pannelsArray[4] = document.getElementById("05");
+			pannelsArray[5] = document.getElementById("06");
+
+			for (var i = 0; i < pannelsArray.length; i++) 
+			{
+				var img = pannelsArray[i];
+				img.style.left = i * 600 + "px";
+			}
+
+			setPannels(pannelsArray);
+		}
+
+	</script>
+
+</body>
+
+</html>

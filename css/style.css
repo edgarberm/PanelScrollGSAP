@@ -1,0 +1,35 @@
+/**
+ *
+ * @author Edgar Bermejo 
+ *
+ *	@BuiltByEdgar
+ * 
+ * HTML5 PANNEL SCROLL GSAP
+ *
+ */
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+}
+
+.wrapper{
+	position: absolute;
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+	background-color: #00FF00;
+}
+
+.container{
+	position: relative;
+	width: 600px;
+	height: 400px;
+}
+
+.pannelImage{
+	position: absolute;
+	width: 600px;
+	height: 400px;
+}

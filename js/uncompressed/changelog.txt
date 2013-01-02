@@ -1,0 +1,42 @@
+CHANGE LOG : GREENSOCK TWEENING PLATFORM
+----------------------------------------
+
+2012-05-15
+---------------------------------------------
+	- Worked around a bug in Chrome that could cause odd transform results when the values hit no transform (translate(0px,0px) scale(1,1) rotate(0) skew(0,0)). Apparently it's a bad idea to set transform to "" after it has been something else.
+
+2012-05-11
+---------------------------------------------
+	- Fixed issue that caused skewY values in CSSPlugin to always be treated as relative. So, for example, if you tweened skewY to 10 and then did another skewY of the same object to 10, it would end up looking like 20.
+
+
+2012-05-06
+---------------------------------------------
+	- Fixed issue that could cause jQuery objects not to be tweened properly if the page was subloaded by another page that used jQuery (thus the global jQuery object reference was updated, throwing off detection of jQuery instances using instanceof).
+
+2012-05-03
+----------------------------------------------
+	- Fixed issue that could cause autoAlpha not to function properly in IE7 and IE8 (due to browser bugs)
+
+2012-05-01
+----------------------------------------------
+	- Added static set() method to TweenLite and TweenMax (a simple way to do a zero-duration tween)
+	- Added a new getLabelsArray() method to TimelineMax
+	- Fixed issue that caused a relative CSS tween to jump to its end value right away when the starting value matched exactly the amount of relative change (very rare). 
+
+2012-04-26
+----------------------------------------------
+	- Improved compatibility with jQuery so that you can pass an array of jQuery instances as the target of a tween (previously you could pass a jQuery object as the target, but not an array of them). 
+
+2012-04-23
+----------------------------------------------
+	- Fixed compatibility issue with RequireJS
+
+2012-04-10
+----------------------------------------------
+beta 1.02
+	- Added ability to tween backgroundPosition
+	- Added ability to tween "border" (like border:"5px solid red")
+	- Worked around Safari bug that caused "top" and "left" changes to be ignored when they are tweened at the same time as transform values (like rotation or scaleX, etc.)
+	- Fixed occasional [very slight] misrendering of what should be rotation of 0 (if rounding errors caused it to be extremely small, it could appear slightly askew previously).
+	- Changed behavior so that tweens with a duration of 0 and delay of 0 will default to immediateRender:true
