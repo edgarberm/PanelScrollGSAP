@@ -1,4 +1,5 @@
 <b>PanelScrollGSAP</b>
+====================
 
 A version of the Greenshok PanelScroll developed with TweenLite GSAP.
 
